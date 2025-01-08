@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+<body style="width: 600px;height: 900px;">
+<div class="first">
+    <form>
+        <fieldset>
+            <legend>Primary details</legend>
+            
+            <label for="medicare No">Medicare No:</label>
+            <input type="text" id="medicareNo" size="10" style="background-color:skyblue">
+            <input type="text" id="medicareNo" size="1">
+           
+            <label for="Valid Till" style="display: flex;flex-direction: unset;margin-bottom: 5px;margin-left: 300px;margin-top: -50px;">Valid Till</label>
+            <input type="Valid Till" id="Valid Till" name="Valid Till" size="6" placeholder="mm/yyyy" style="margin-left: 300px;">
+            <input type="text" id="Valid Till" size="1" style="background-color: grey">
+            <br><br>
+            <label for="title">Title:</label>
+            <select id="title" name="title">
+                <option value="none">none</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option></select>
+                <br><br>
+                <label for="Name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="lastname,firstname,middlename">
+                <br><br>
+                <label for="prefName">pref.Name:</label>
+                <input type="text" id="prefName" name="prefName">
+                <br><br>
+                
+                <label for="Dob">Dob:</label>
+                 <input type="date" id="date" name="date">
+                 <br><br>
+                 <label for="Sex">Sex:</label>
+                 <input type="radio" id="male" name="sex"value="male"> 
+                 <label for="male" style="margin-left: -65px;">Male</label>
+                 <input type="radio" id="female" name="sex"value="female"> 
+                 <label for="female" style="margin-left: -50px;">Female</label>
+                 <br><br>
+                 <label for="familyname">Family Name</label>
+                 <input type="text" id="familyname" name="familyname" style="border: 1px solid;"> 
+                 <button class="styled-button">N</button>
+                 <button class="styled-button">I</button>
+
+            </fieldset>
+          
+            <fieldset>
+              <legend>Contact details</legend>
+              
+              <table>
+                  <tr>
+                  <th style="padding-right: 100px;">Phone</th>
+                    <th style="padding-right: 100px;">Home</th>
+                    <th style="padding-right: 100px;">Work</th>
+                  </tr>
+                  <tr>
+                  <td></td>
+                    <td><input type="text" placeholder="Phone"></td>
+                    <td><input type="text" placeholder="Phone"></td>
+                  </tr>
+              </table>
+              <table>
+                  <tr>
+                  <th style="padding-right: 140px;"></th>
+                    <th style="padding-right: 100px;">Mobile</th>
+                    <th style="padding-right: 100px;">Fax</th>
+                  </tr>
+                  <tr>
+                      <td></td>
+                    <td><input type="text" placeholder="Mobile"></td>
+                    <td><input type="text" placeholder="Fax"></td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                  <th style="padding-right: 140px;"></th>
+                    <th style="padding-right: 100px;">Next of Kin</th>
+                    <th style="padding-right: 100px;">Next of kin Ph:</th>
+                  </tr>
+                  <tr>
+                      <td></td>
+                    <td><input type="text" placeholder="Next of Kin"></td>
+                    <td><input type="text" placeholder="Next of kin Ph:"></td>
+                  </tr>
+                </table>
+              
+                <table>
+                  <tr>
+                  <th style="padding-right: 25px;">Emmergency No</th>
+                  <td><input type="text" placeholder="Phone"></td>
+                  </tr>
+                  <tr>
+                      <th style="padding-right: 25px;">Email</th>
+                      <td><input type="text" placeholder="Email"></td>
+                      </tr>
+              </table>
+    </div>
+          </div>
+          </fieldset>
+          <fieldset style="background-color: lightblue;">
+            <legend id="form-title">Address Details</legend>
+            
+            <!-- Residential Address -->
+             
+            <div id="residential-section">
+              <fieldset>
+              <legend id="residential-title">Residential Address</legend>
+              <label for="res-address1">Address 1:</label>
+              <input type="text" id="res-address1" name="res-address1"><br><br>
+              
+              <label for="res-address2">Address 2:</label>
+              <input type="text" id="res-address2" name="res-address2"><br><br>
+              
+              <label for="res-suburb">Suburb:</label>
+              <input type="text" id="res-suburb" name="res-suburb">
+              
+              <label for="res-state">State:</label>
+              <select id="res-state" name="res-state">
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <!-- Add other states as needed -->
+              </select><br><br>
+              
+              <label for="res-postal">Postal Code:</label>
+              <input type="text" id="res-postal" name="res-postal">
+              <button class="styled-button">?</button>
+              
+              <label for="res-country">Country:</label>
+              <input type="text" id="res-country" name="res-country" size="7" value="AUSTRALIA" readonly>
+              </fieldset>
+            </div>
+          
+      
+            <!-- Single Address Checkbox -->
+             <fieldset>
+             <legend>Single address</legend>
+
+            <div id="single-address-section">
+              <label for="same-address">Are Mailing Address and Residential Address the same? </label>
+              <input type="checkbox" id="same-address" name="same-address">
+              
+            </fieldset>
+            </div>
+            
+            <!-- Mailing Address -->
+             <fieldset>
+            <legend>mailing address</legend>
+            
+            <div id="mailing-section">
+              
+              <label for="mail-address1">Address 1:</label>
+              <input type="text" id="mail-address1" name="mail-address1"><br><br>
+              
+              <label for="mail-address2">Address 2:</label>
+              <input type="text" id="mail-address2" name="mail-address2"><br><br>
+              
+              <label for="mail-suburb">Suburb:</label>
+              <input type="text" id="mail-suburb" name="mail-suburb">
+              
+              <label for="mail-state">State:</label>
+              <select id="mail-state" name="mail-state">
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <!-- Add other states as needed -->
+              </select><br><br>
+              
+              <label for="mail-postal">Postal Code:</label>
+              <input type="text" id="mail-postal" name="mail-postal">
+              <button class="styled-button">?</button>
+
+              
+              <label for="mail-country">Country:</label>
+              <input type="text" id="mail-country" name="mail-country" size="7" value="AUSTRALIA" readonly>
+            </fieldset>
+          </fieldset>
+            </div>
+      
+            <!-- Additional Details -->
+            <div id="additional-details" style="background-color:lightblue;border-radius: 5px;padding: 30px;">
+              <label for="ihi-number">IHI Number</label>
+              <label for="80036">80036</label>
+              <input type="text" id="ihi-number" name="ihi-number" size="1" style="margin: 6px;"><br><br>
+              
+              <label for="number-status">Number Status</label>
+              <input type="text" id="number-status" name="number-status"><br><br>
+              
+              <label for="record-status">Record Status</label>
+              <input type="text" id="record-status" name="record-status"><br><br>
+              
+              <label for="last-updated">Last Updated</label>
+              <input type="text" id="last-updated" name="last-updated"><br><br>
+
+              <button type="submit" class="btn submit-btn">submit</button>
+              <button type="button" class="btn submit-btn"onclick="clearform()">Clear</button>
+            </div>
+            
+            
+           
+        
+
+        
+    
+ </form>
+</div>
+</body>
+</html>
